@@ -1,0 +1,94 @@
+[
+  {
+    "year": 1984,
+    "title": "Born in Seaside, Oregon",
+    "description": "A small coastal town on the Oregon coast. Population 6,000. Big dreams.",
+    "icon": "🌊",
+    "category": "life",
+    "image": "/photos/seaside-oregon.jpg"
+  },
+  {
+    "year": 2007,
+    "title": "BS Information Systems — Oregon State University",
+    "description": "Go Beavers. Graduated with a degree that would launch a 17+ year career in tech.",
+    "icon": "🎓",
+    "category": "education",
+    "image": "/photos/oregon-state.jpg"
+  },
+  {
+    "year": 2007,
+    "month": "June",
+    "title": "First Job: Hewlett-Packard Enterprise",
+    "description": "Software Developer building government Medicaid data management systems. C#, SQL, .NET, Java. Vancouver, WA.",
+    "icon": "💻",
+    "category": "career",
+    "image": "/photos/hp-office.jpg"
+  },
+  {
+    "year": 2011,
+    "title": "Huron Consulting Group",
+    "description": "Senior Product Developer in Beaverton, OR. Built APIs, database solutions, and automated troubleshooting systems for enterprise clients. Cut average resolution time by 20%.",
+    "icon": "📊",
+    "category": "career"
+  },
+  {
+    "year": 2013,
+    "title": "Married Heather",
+    "description": "The best decision I ever made.",
+    "icon": "💍",
+    "category": "life",
+    "image": "/photos/wedding.jpg"
+  },
+  {
+    "year": 2013,
+    "title": "Aria is Born",
+    "description": "Our first kid enters the world. Everything changes.",
+    "icon": "👶",
+    "category": "life"
+  },
+  {
+    "year": 2014,
+    "title": "Joined Salesforce",
+    "description": "Senior Outbound Technical Product Manager for Marketing Cloud. Reported to the Chief Customer Officer. This is where the Salesforce journey begins — and it never really stops.",
+    "icon": "☁️",
+    "category": "career",
+    "image": "/photos/salesforce-tower.jpg"
+  },
+  {
+    "year": 2019,
+    "title": "Finn is Born",
+    "description": "Kid number two. The crew is complete.",
+    "icon": "👶",
+    "category": "life",
+    "image": "/photos/family-2019.jpeg"
+  },
+  {
+    "year": 2021,
+    "title": "Freshworks — Staff Product Manager",
+    "description": "Stepped outside the Salesforce ecosystem to lead CRM product strategy at Freshworks. Customer-first support model, data integrations, and bridging product with real-world needs.",
+    "icon": "🚀",
+    "category": "career"
+  },
+  {
+    "year": 2024,
+    "title": "Back to Salesforce Ecosystem",
+    "description": "Enterprise Architect at ListEngage. Technical lead on Data Cloud, Sales Cloud, and Marketing Cloud. Solution engineering for strategic pre-sales.",
+    "icon": "🏗️",
+    "category": "career"
+  },
+  {
+    "year": 2025,
+    "title": "Salesforce — Senior AI & Data Success Architect",
+    "description": "Returned to Salesforce to architect Data Cloud and Agentforce implementations for enterprise customers. Certified in AI, Data Cloud, and Marketing. Training 40+ architects on the next generation of the platform.",
+    "icon": "🤖",
+    "category": "career"
+  },
+  {
+    "year": 2025,
+    "title": "Big Move to Indianapolis",
+    "description": "Packed up the family and moved from the Pacific Northwest to Carmel, Indiana. New city, new chapter.",
+    "icon": "🏠",
+    "category": "life",
+    "image": "/photos/indianapolis.jpg"
+  }
+]
