@@ -767,6 +767,45 @@ body {
   .hero-orb-3 { width: 220px; height: 220px; }
 }
 
+/* ─── TESTIMONIAL CARDS ─── */
+.testimonial-card {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ─── CONTACT FORM ─── */
+#contact-form-card input,
+#contact-form-card textarea {
+  transition: all 0.3s ease;
+}
+
+#contact-form-card input:focus,
+#contact-form-card textarea:focus {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.contact-quick-link {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-quick-link:hover {
+  transform: translateX(8px);
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+/* ─── LINKEDIN EMBED ─── */
+#linkedin-embed {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#linkedin-embed:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.15);
+}
+
 /* ─── REDUCED MOTION ─── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
