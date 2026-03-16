@@ -26,13 +26,6 @@
   },
   {
     "year": 2011,
-    "title": "Huron Consulting Group",
-    "description": "Senior Product Developer in Beaverton, OR. Built APIs, database solutions, and automated troubleshooting systems for enterprise clients. Cut average resolution time by 20%.",
-    "icon": "📊",
-    "category": "career"
-  },
-  {
-    "year": 2013,
     "title": "Married Heather",
     "description": "The best decision I ever made.",
     "icon": "💍",
@@ -40,11 +33,20 @@
     "image": "/photos/wedding.jpg"
   },
   {
+    "year": 2011,
+    "title": "Huron Consulting Group",
+    "description": "Senior Product Developer in Beaverton, OR. Built APIs, database solutions, and automated troubleshooting systems for enterprise clients. Cut average resolution time by 20%.",
+    "icon": "📊",
+    "category": "career",
+    "image": "/photos/huron.jpg"
+  },
+  {
     "year": 2013,
     "title": "Aria is Born",
     "description": "Our first kid enters the world. Everything changes.",
     "icon": "👶",
-    "category": "life"
+    "category": "life",
+    "image": "/photos/Aria.jpeg"
   },
   {
     "year": 2014,
@@ -53,6 +55,14 @@
     "icon": "☁️",
     "category": "career",
     "image": "/photos/salesforce-tower.jpg"
+  },
+  {
+    "year": 2017,
+    "title": "Moved to San Diego",
+    "description": "Traded the Pacific Northwest rain for Southern California sunshine. Beach life with the family.",
+    "icon": "🌴",
+    "category": "life",
+    "image": "/photos/carlsbad.jpg"
   },
   {
     "year": 2019,
@@ -67,26 +77,37 @@
     "title": "Freshworks — Staff Product Manager",
     "description": "Stepped outside the Salesforce ecosystem to lead CRM product strategy at Freshworks. Customer-first support model, data integrations, and bridging product with real-world needs.",
     "icon": "🚀",
-    "category": "career"
+    "category": "career",
+    "image": "/photos/freshworks.jpg"
+  },
+  {
+    "year": 2021,
+    "title": "Moved to Sedona, Arizona",
+    "description": "Red rocks and desert skies. A dramatic change of scenery for the family.",
+    "icon": "🏜️",
+    "category": "life",
+    "image": "/photos/sedona.jpg"
   },
   {
     "year": 2024,
     "title": "Back to Salesforce Ecosystem",
     "description": "Enterprise Architect at ListEngage. Technical lead on Data Cloud, Sales Cloud, and Marketing Cloud. Solution engineering for strategic pre-sales.",
     "icon": "🏗️",
-    "category": "career"
+    "category": "career",
+    "image": "/photos/listengage.jpg"
   },
   {
     "year": 2025,
     "title": "Salesforce — Senior AI & Data Success Architect",
     "description": "Returned to Salesforce to architect Data Cloud and Agentforce implementations for enterprise customers. Certified in AI, Data Cloud, and Marketing. Training 40+ architects on the next generation of the platform.",
     "icon": "🤖",
-    "category": "career"
+    "category": "career",
+    "image": "/photos/agentforce.jpg"
   },
   {
     "year": 2025,
     "title": "Big Move to Indianapolis",
-    "description": "Packed up the family and moved from the Pacific Northwest to Carmel, Indiana. New city, new chapter.",
+    "description": "Packed up the family and traded Sedona's red rocks for the Midwest. Carmel, Indiana — new city, new chapter.",
     "icon": "🏠",
     "category": "life",
     "image": "/photos/indianapolis.jpg"

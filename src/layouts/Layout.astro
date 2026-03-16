@@ -18,8 +18,28 @@ const { title, description = "Senior AI & Data Success Architect at Salesforce. 
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://elliottweed.com" />
+  <meta property="og:image" content="https://elliottweed.com/photos/Headshot2024.jpg" />
+  <meta property="og:site_name" content="Elliott Weed" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content="https://elliottweed.com/photos/Headshot2024.jpg" />
+  <link rel="canonical" href="https://elliottweed.com" />
   <title>{title}</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Elliott Weed",
+    "url": "https://elliottweed.com",
+    "image": "https://elliottweed.com/photos/Headshot2024.jpg",
+    "jobTitle": "Senior AI & Data Success Architect",
+    "worksFor": { "@type": "Organization", "name": "Salesforce" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Oregon State University" },
+    "knowsAbout": ["Artificial Intelligence", "Data Cloud", "Agentforce", "Salesforce", "Marketing Cloud"],
+    "sameAs": ["https://www.linkedin.com/in/elliottweed/"]
+  })} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
