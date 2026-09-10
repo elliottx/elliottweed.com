@@ -66,3 +66,13 @@ The page must remain indexable, canonical to `https://elliottweed.com`, and stru
 - Public photo assets contain no embedded EXIF, IPTC, or XMP metadata, and the build contains no unlinked originals directory.
 - The Astro production build passes.
 - Automated regression checks verify the public positioning, canonical URL, metadata, historical-title containment, and absence of confidential customer/project language.
+
+## Post-launch hardening addendum
+
+The final review sharpened the same approved design principles: professional authority, public safety, accessibility, and credibility.
+
+- Keep the public journey professionally useful. Do not name Elliott's spouse or minor children, publish children's birth years, or deploy family photographs. Generalize the current location to the Midwest.
+- A fixed navigation that is visually hidden must not accept invisible keyboard focus. Reveal it on `:focus-within` and give navigation links an explicit `:focus-visible` treatment.
+- Meaningful normal-sized copy must meet WCAG AA contrast against the page background.
+- Deployed image extensions must agree with their encoded bytes so hosts and browsers use the correct MIME type.
+- Search descriptions must distinguish 19+ years in enterprise technology from Elliott's more recent enterprise AI specialization.

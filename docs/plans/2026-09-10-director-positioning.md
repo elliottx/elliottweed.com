@@ -49,3 +49,15 @@
 - [x] Merge it into local `main` without discarding the existing unpushed SEO commit.
 - [x] Push the exact reviewed `main` state to the configured GitHub remote so Netlify can deploy it.
 - [x] Confirm the live site returns HTTP 200 and exposes the new title and Director positioning.
+
+## Task 5: Post-launch accessibility, privacy, and asset hardening
+
+- [x] Extend the regression test for public family details, generalized location, focus-safe navigation, WCAG-AA text classes, truthful tenure wording, and image magic-byte/extension agreement.
+- [x] Run `npm test` and confirm the new checks fail against the published source for the expected reasons.
+- [x] Remove family/minor milestones and public family images while preserving private local copies outside the repository.
+- [x] Add keyboard focus visibility, raise secondary-text contrast, correct image extensions and references, and calibrate the search description.
+- [x] Run `npm test`, `npm run build`, and `git diff --check`.
+- [x] Obtain independent spec, quality, and adversarial review; fix credible findings and rerun proof.
+- [ ] Commit, fast-forward `main`, push, and verify the live build matches the reviewed source.
+
+Historical photo blobs in the public Git repository require a separate destructive history rewrite. Do not rewrite or force-push history without Elliott's explicit approval.

@@ -4,14 +4,16 @@ import test from 'node:test';
 
 const pagePath = new URL('../src/pages/index.astro', import.meta.url);
 const layoutPath = new URL('../src/layouts/Layout.astro', import.meta.url);
+const stylesheetPath = new URL('../src/styles/global.css', import.meta.url);
 const timelinePath = new URL('../src/data/timeline.json', import.meta.url);
 const builtPagePath = new URL('../dist/index.html', import.meta.url);
 const photosPath = new URL('../public/photos/', import.meta.url);
 const builtPhotosPath = new URL('../dist/photos/', import.meta.url);
 
-const [page, layout, timelineSource, builtPage] = await Promise.all([
+const [page, layout, stylesheet, timelineSource, builtPage] = await Promise.all([
   readFile(pagePath, 'utf8'),
   readFile(layoutPath, 'utf8'),
+  readFile(stylesheetPath, 'utf8'),
   readFile(timelinePath, 'utf8'),
   readFile(builtPagePath, 'utf8'),
 ]);
@@ -36,8 +38,9 @@ test('presents the Director role and production-oriented thesis in every current
 
 test('emits consistent search, social, canonical, and structured metadata', () => {
   const title = 'Elliott Weed — Success Architecture Director | Enterprise AI';
-  const description = 'Success Architecture Director at Salesforce with 19+ years solving enterprise AI problems and shaping governed paths for Agentforce and Data 360.';
+  const description = 'Success Architecture Director at Salesforce with 19+ years in enterprise technology, solving enterprise AI problems across Agentforce, Data 360, and delivery.';
 
+  assert.ok(description.length <= 160, 'the search description should fit a standard result snippet');
   assert.match(page, new RegExp(`title="${title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`));
   assert.match(page, new RegExp(`description="${description.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`));
   assert.ok(builtPage.includes(`<title>${title}</title>`));
@@ -116,6 +119,47 @@ test('keeps leadership content in the promised reading order and navigation safe
   assert.match(page, /href="#hero"[^>]*aria-label="Back to top"/);
   assert.match(page, /matchMedia\('\(prefers-reduced-motion: reduce\)'\)/);
   assert.match(page, /if \(prefersReducedMotion\)/);
+  assert.match(stylesheet, /\.sticky-nav:focus-within\s*\{[^}]*transform:\s*translateY\(0\)[^}]*transition-duration:\s*0s/s);
+  assert.match(stylesheet, /\.sticky-nav a:focus-visible\s*\{[^}]*outline:/s);
+  assert.match(stylesheet, /section\[id\]\s*\{[^}]*scroll-margin-top:/s);
+});
+
+test('keeps the public journey professionally focused and protects family privacy', () => {
+  const publicIdentity = `${page}\n${timelineSource}\n${builtPage}`;
+  for (const privateDetail of [
+    /family-2019\.jpeg/i,
+    /wedding\.jpg/i,
+    /\/photos\/midwest\.webp/i,
+  ]) {
+    assert.doesNotMatch(publicIdentity, privateDetail);
+  }
+  assert.equal(timeline.some((event) => ['👶', '💍'].includes(event.icon)), false);
+  assert.equal(timeline.some((event) => event.category === 'life' && event.year >= 2025), false);
+  assert.match(
+    page,
+    /<div class="text-white font-medium">Location<\/div>\s*<div[^>]*>Midwest, United States<\/div>/,
+  );
+});
+
+test('uses AA-safe utility colors for meaningful normal-sized copy', () => {
+  assert.doesNotMatch(page, /text-slate-(?:500|600)/);
+  assert.doesNotMatch(page, /placeholder-slate-(?:500|600)/);
+  assert.equal(page.match(/focus:ring-2 focus:ring-blue-400/g)?.length, 3);
+  assert.doesNotMatch(page, /focus:ring-1|focus:ring-blue-500\/50/);
+  assert.match(page, /from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700/);
+});
+
+test('references only photo assets that ship in source and production output', async () => {
+  const references = new Set(
+    [...publicSource.matchAll(/\/photos\/[^"'\s)]+/g)].map((match) => match[0]),
+  );
+
+  for (const reference of references) {
+    await Promise.all([
+      readFile(new URL(`../public${reference}`, import.meta.url)),
+      readFile(new URL(`../dist${reference}`, import.meta.url)),
+    ]);
+  }
 });
 
 test('keeps the full authority proof compact in the mobile hero', () => {
@@ -202,8 +246,33 @@ test('publishes photo assets without embedded EXIF, IPTC, or XMP metadata', asyn
     assert.equal(isoText.includes('application/rdf+xml'), false, `${pathname} contains ISO BMFF XMP metadata`);
   }
 
-  for (const photo of await findPhotos(photosPath)) {
-    const bytes = await readFile(photo);
-    assertNoEmbeddedMetadata(bytes, photo.pathname);
+  function assertExtensionMatchesBytes(bytes, pathname) {
+    const lowerPath = pathname.toLowerCase();
+    if (bytes[0] === 0xff && bytes[1] === 0xd8) {
+      assert.match(lowerPath, /\.jpe?g$/);
+      return;
+    }
+    if (bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) {
+      assert.match(lowerPath, /\.png$/);
+      return;
+    }
+    if (bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP') {
+      assert.match(lowerPath, /\.webp$/);
+      return;
+    }
+    const header = bytes.toString('ascii', 0, 32);
+    if (/ftyp(?:avif|avis)/.test(header)) {
+      assert.match(lowerPath, /\.avif$/);
+      return;
+    }
+    assert.fail(`${pathname} has an unsupported or unrecognized image encoding`);
+  }
+
+  for (const directory of [photosPath, builtPhotosPath]) {
+    for (const photo of await findPhotos(directory)) {
+      const bytes = await readFile(photo);
+      assertNoEmbeddedMetadata(bytes, photo.pathname);
+      assertExtensionMatchesBytes(bytes, photo.pathname);
+    }
   }
 });

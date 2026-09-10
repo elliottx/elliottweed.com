@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background: #0a0e1a;
@@ -69,6 +73,17 @@ body {
 
 .sticky-nav.visible {
   transform: translateY(0);
+}
+
+.sticky-nav:focus-within {
+  transform: translateY(0);
+  transition-duration: 0s;
+}
+
+.sticky-nav a:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 5px;
+  border-radius: 0.25rem;
 }
 
 .nav-link {

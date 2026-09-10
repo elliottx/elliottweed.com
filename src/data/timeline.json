@@ -26,27 +26,11 @@
   },
   {
     "year": 2011,
-    "title": "Married Heather",
-    "description": "The best decision I ever made.",
-    "icon": "💍",
-    "category": "life",
-    "image": "/photos/wedding.jpg"
-  },
-  {
-    "year": 2011,
     "title": "Huron Consulting Group",
     "description": "Senior Product Developer in Beaverton, OR. Built APIs, database solutions, and automated troubleshooting systems for enterprise clients. Cut average resolution time by 20%.",
     "icon": "📊",
     "category": "career",
     "image": "/photos/huron.jpg"
-  },
-  {
-    "year": 2013,
-    "title": "Aria is Born",
-    "description": "Our first kid enters the world. Everything changes.",
-    "icon": "👶",
-    "category": "life",
-    "image": "/photos/Aria.jpeg"
   },
   {
     "year": 2014,
@@ -65,20 +49,12 @@
     "image": "/photos/carlsbad.jpg"
   },
   {
-    "year": 2019,
-    "title": "Finn is Born",
-    "description": "Kid number two. The crew is complete.",
-    "icon": "👶",
-    "category": "life",
-    "image": "/photos/family-2019.jpeg"
-  },
-  {
     "year": 2021,
     "title": "Freshworks — Staff Product Manager",
     "description": "Stepped outside the Salesforce ecosystem to lead CRM product strategy at Freshworks. Customer-first support model, data integrations, and bridging product with real-world needs.",
     "icon": "🚀",
     "category": "career",
-    "image": "/photos/freshworks.jpg"
+    "image": "/photos/freshworks.webp"
   },
   {
     "year": 2021,
@@ -103,14 +79,6 @@
     "icon": "🤖",
     "category": "career",
     "image": "/photos/agentforce.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Big Move to Indianapolis",
-    "description": "Packed up the family and traded Sedona's red rocks for the Midwest. Carmel, Indiana — new city, new chapter.",
-    "icon": "🏠",
-    "category": "life",
-    "image": "/photos/indianapolis.jpg"
   },
   {
     "year": 2026,
