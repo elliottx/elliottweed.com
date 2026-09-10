@@ -58,6 +58,6 @@
 - [x] Add keyboard focus visibility, raise secondary-text contrast, correct image extensions and references, and calibrate the search description.
 - [x] Run `npm test`, `npm run build`, and `git diff --check`.
 - [x] Obtain independent spec, quality, and adversarial review; fix credible findings and rerun proof.
-- [ ] Commit, fast-forward `main`, push, and verify the live build matches the reviewed source.
+- [x] Commit, fast-forward `main`, push, and verify the live build matches the reviewed source.
 
 Historical photo blobs in the public Git repository require a separate destructive history rewrite. Do not rewrite or force-push history without Elliott's explicit approval.
