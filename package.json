@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "pretest": "astro build",
+    "test": "node --test tests/director-positioning.test.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

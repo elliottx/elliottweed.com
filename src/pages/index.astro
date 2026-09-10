@@ -13,19 +13,23 @@ interface TimelineEvent {
 }
 ---
 
-<Layout title="Elliott Weed — Senior AI & Data Success Architect">
+<Layout
+  title="Elliott Weed — Success Architecture Director | Enterprise AI"
+  description="Success Architecture Director at Salesforce with 19+ years solving enterprise AI problems and shaping governed paths for Agentforce and Data 360."
+>
 
   <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- STICKY NAV                                                  -->
   <!-- ═══════════════════════════════════════════════════════════ -->
   <nav class="sticky-nav" id="sticky-nav" aria-label="Main navigation">
     <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
-      <a href="#" class="text-white font-bold text-lg tracking-tight">
+      <a href="#hero" class="text-white font-bold text-lg tracking-tight" aria-label="Back to top">
         E<span class="text-gradient">W</span>
       </a>
-      <div class="flex items-center gap-6 md:gap-8">
-        <a href="#timeline" class="nav-link text-sm text-slate-400 hover:text-white transition-colors">Journey</a>
-        <a href="#expertise" class="nav-link text-sm text-slate-400 hover:text-white transition-colors">Expertise</a>
+      <div class="flex items-center gap-5 md:gap-8">
+        <a href="#impact" class="nav-link text-sm text-slate-400 hover:text-white transition-colors">Impact</a>
+        <a href="#expertise" class="nav-link text-sm text-slate-400 hover:text-white transition-colors">Leadership</a>
+        <a href="#timeline" class="nav-link text-sm text-slate-400 hover:text-white transition-colors hidden sm:block">Journey</a>
         <a href="#contact" class="nav-link text-sm text-slate-400 hover:text-white transition-colors hidden sm:block">Contact</a>
       </div>
     </div>
@@ -47,62 +51,172 @@ interface TimelineEvent {
     <!-- Grid pattern -->
     <div class="grid-pattern" aria-hidden="true"></div>
 
-    <div class="max-w-5xl mx-auto px-6 text-center relative z-10 py-32">
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10 py-10 sm:py-24 md:py-32">
 
       <!-- Headshot -->
-      <div class="mb-10" id="hero-photo">
+      <div class="mb-5 sm:mb-8 md:mb-10" id="hero-photo">
         <div class="headshot-ring inline-block">
           <img
             src="/photos/Headshot2024.jpg"
             alt="Elliott Weed"
             width="160"
             height="160"
-            class="headshot-img w-36 h-36 md:w-44 md:h-44 object-cover"
+            class="headshot-img w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44 object-cover"
             loading="eager"
           />
         </div>
       </div>
 
       <!-- Name -->
-      <h1 class="text-5xl sm:text-6xl md:text-8xl font-extrabold tracking-tight mb-6 leading-[1.05]" id="hero-name">
+      <h1 class="text-4xl sm:text-6xl md:text-8xl font-extrabold tracking-tight mb-3 sm:mb-5 md:mb-6 leading-[1.05]" id="hero-name">
         <span class="text-white">Elliott </span><span class="text-gradient">Weed</span>
       </h1>
 
-      <!-- Title -->
-      <p class="text-lg sm:text-xl md:text-2xl font-medium text-slate-400 mb-5 tracking-wide" id="hero-title">
-        Senior AI & Data Success Architect
-        <span class="mx-2 text-slate-600">|</span>
-        <span class="text-blue-400">Salesforce</span>
+      <!-- Formal role -->
+      <p class="text-base sm:text-xl md:text-2xl font-medium text-slate-400 mb-3 sm:mb-4 md:mb-5 tracking-wide" id="hero-title">
+        Success Architecture Director at Salesforce
       </p>
 
-      <!-- Subtitle -->
-      <p class="text-base md:text-lg text-slate-500 max-w-2xl mx-auto mb-14 leading-relaxed" id="hero-sub">
-        17+ years turning complex technical problems into elegant solutions.
-        From small-town Oregon to architecting AI for the world's largest companies.
+      <!-- Positioning thesis -->
+      <p class="text-xl sm:text-3xl md:text-4xl font-semibold text-white max-w-4xl mx-auto mb-3 sm:mb-5 md:mb-6 tracking-tight leading-tight" id="hero-thesis">
+        I solve enterprise AI problems that do not fit neatly inside one team.
+      </p>
+      <p class="text-base md:text-lg text-slate-400 max-w-3xl mx-auto mb-6 sm:mb-10 md:mb-14 leading-relaxed" id="hero-sub">
+        Across Agentforce and Data 360, I connect strategy, data, architecture, product, and delivery—turning ambiguity into production-ready architecture and reusable patterns.
       </p>
 
       <!-- Stats -->
-      <div class="grid grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto" id="hero-stats">
+      <div class="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 max-w-2xl mx-auto" id="hero-stats">
         <div class="stat-card text-center">
-          <div class="text-3xl md:text-4xl font-bold text-white stat-number" data-target="17">0</div>
-          <div class="text-xs md:text-sm text-slate-500 mt-1.5 uppercase tracking-wider">Years in Tech</div>
+          <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white stat-number" data-target="19">19+</div>
+          <div class="text-xs md:text-sm leading-tight text-slate-400 mt-1.5 uppercase tracking-wider">Years in Enterprise Tech</div>
         </div>
         <div class="stat-card text-center">
-          <div class="text-3xl md:text-4xl font-bold text-white stat-number" data-target="9">0</div>
-          <div class="text-xs md:text-sm text-slate-500 mt-1.5 uppercase tracking-wider">Certifications</div>
+          <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white stat-number" data-target="10">10+</div>
+          <div class="text-xs md:text-sm leading-tight text-slate-400 mt-1.5 uppercase tracking-wider">Years in Salesforce Ecosystem</div>
         </div>
         <div class="stat-card text-center">
-          <div class="text-3xl md:text-4xl font-bold text-white stat-number" data-target="5">0</div>
-          <div class="text-xs md:text-sm text-slate-500 mt-1.5 uppercase tracking-wider">Companies Shaped</div>
+          <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white stat-number" data-target="40">40+</div>
+          <div class="text-xs md:text-sm leading-tight text-slate-400 mt-1.5 uppercase tracking-wider">Architects Enabled</div>
         </div>
       </div>
 
       <!-- Scroll indicator -->
-      <div class="mt-20" id="scroll-hint">
+      <div class="hidden md:block mt-20" id="scroll-hint">
         <div class="flex flex-col items-center text-slate-600">
           <span class="text-xs uppercase tracking-[0.2em] mb-3">Scroll</span>
           <div class="w-5 h-8 rounded-full border border-slate-600 flex justify-center pt-1.5">
             <div class="w-1 h-2 rounded-full bg-slate-500 animate-bounce"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- DIRECTOR-LEVEL IMPACT                                       -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="py-28 md:py-36 relative overflow-hidden" id="impact">
+    <div class="absolute inset-0 bg-gradient-to-b from-blue-950/10 via-purple-950/5 to-transparent"></div>
+    <div class="grid-pattern" aria-hidden="true"></div>
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+        <div class="section-divider" id="impact-divider"></div>
+        <p class="text-xs font-semibold uppercase tracking-[0.24em] text-blue-400 mb-5">How I work</p>
+        <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6" id="impact-heading">
+          From hard problem to <span class="text-gradient">durable capability.</span>
+        </h2>
+        <p class="text-slate-400 text-base md:text-lg leading-relaxed" id="impact-sub">
+          I work at the seams: where ownership is unclear, the technology is moving, and the organization needs one coherent path forward.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8" id="impact-grid">
+        <article class="glass-card p-7 md:p-8">
+          <div class="glass-card-glow" style="background: radial-gradient(circle at 25% 20%, rgba(59, 130, 246, 0.09), transparent 60%);" aria-hidden="true"></div>
+          <div class="font-mono text-sm text-blue-400 mb-6 relative">01 / FIND</div>
+          <h3 class="text-xl font-bold text-white mb-3 relative">Find the real problem</h3>
+          <p class="text-slate-400 text-sm md:text-base leading-relaxed relative">I turn executive priorities into a bounded use case, explicit system decisions, and a path teams can actually execute.</p>
+        </article>
+
+        <article class="glass-card p-7 md:p-8">
+          <div class="glass-card-glow" style="background: radial-gradient(circle at 50% 20%, rgba(139, 92, 246, 0.09), transparent 60%);" aria-hidden="true"></div>
+          <div class="font-mono text-sm text-purple-400 mb-6 relative">02 / MULTIPLY</div>
+          <h3 class="text-xl font-bold text-white mb-3 relative">Make the solution reusable</h3>
+          <p class="text-slate-400 text-sm md:text-base leading-relaxed relative">I convert the lesson into patterns, guidance, and tools so 40+ architects can apply the judgment without recreating the struggle.</p>
+        </article>
+
+        <article class="glass-card p-7 md:p-8">
+          <div class="glass-card-glow" style="background: radial-gradient(circle at 75% 20%, rgba(236, 72, 153, 0.08), transparent 60%);" aria-hidden="true"></div>
+          <div class="font-mono text-sm text-pink-400 mb-6 relative">03 / OPERATE</div>
+          <h3 class="text-xl font-bold text-white mb-3 relative">Design for business proof</h3>
+          <p class="text-slate-400 text-sm md:text-base leading-relaxed relative">I align leaders, account teams, Product, and delivery around readiness, adoption, and measurable outcomes—not just a technically impressive demo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- EXPERTISE                                                   -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="py-32 md:py-40 relative overflow-hidden" id="expertise">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/5 to-transparent"></div>
+    <div class="grid-pattern" aria-hidden="true"></div>
+
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-20">
+        <div class="section-divider" id="expertise-divider"></div>
+        <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4" id="expertise-heading">
+          Where I <span class="text-gradient">Lead</span>
+        </h2>
+        <p class="text-slate-500 text-lg" id="expertise-sub">
+          Enterprise AI systems, the trusted data beneath them, and the architecture discipline that makes them repeatable
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8" id="expertise-grid">
+        <div class="glass-card expertise-card overflow-hidden">
+          <div class="glass-card-glow" style="background: radial-gradient(circle at 30% 30%, rgba(59, 130, 246, 0.08), transparent 60%);" aria-hidden="true"></div>
+          <div class="expertise-image-wrap">
+            <img src="/photos/agentforce-demo.png" alt="Agentforce AI Interface" class="w-full h-36 object-cover" loading="lazy" />
+            <div class="expertise-image-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="p-8">
+            <div class="icon-container bg-blue-500/10 border border-blue-500/15 mb-6 relative">
+              <span>🤖</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3 relative">Enterprise AI & Agentforce</h3>
+            <p class="text-slate-400 text-sm leading-relaxed relative">Moving beyond promising demos to governed agents in real workflows—grounded in trusted context, permissions, approval paths, evaluation, and human accountability.</p>
+          </div>
+        </div>
+
+        <div class="glass-card expertise-card overflow-hidden">
+          <div class="glass-card-glow" style="background: radial-gradient(circle at 50% 30%, rgba(139, 92, 246, 0.08), transparent 60%);" aria-hidden="true"></div>
+          <div class="expertise-image-wrap">
+            <img src="/photos/data-cloud-arch.png" alt="Data Cloud Architecture" class="w-full h-36 object-cover" loading="lazy" />
+            <div class="expertise-image-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="p-8">
+            <div class="icon-container bg-purple-500/10 border border-purple-500/15 mb-6 relative">
+              <span>☁️</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3 relative">Data 360 & Trusted Context</h3>
+            <p class="text-slate-400 text-sm leading-relaxed relative">Designing the Data Cloud and Data 360 foundation that gives AI the right enterprise context without outrunning identity, access, governance, or activation.</p>
+          </div>
+        </div>
+
+        <div class="glass-card expertise-card overflow-hidden">
+          <div class="glass-card-glow" style="background: radial-gradient(circle at 70% 30%, rgba(236, 72, 153, 0.08), transparent 60%);" aria-hidden="true"></div>
+          <div class="expertise-image-wrap">
+            <img src="/photos/marketing-cloud.png" alt="Marketing Cloud Dashboard" class="w-full h-36 object-cover" loading="lazy" />
+            <div class="expertise-image-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="p-8">
+            <div class="icon-container bg-pink-500/10 border border-pink-500/15 mb-6 relative">
+              <span>🎯</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3 relative">Architecture at Scale</h3>
+            <p class="text-slate-400 text-sm leading-relaxed relative">Combining 19 years across product, architecture, transformation, and consulting with deep Marketing Cloud experience—then turning that judgment into reusable guidance for customers and architects.</p>
           </div>
         </div>
       </div>
@@ -193,73 +307,6 @@ interface TimelineEvent {
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════ -->
-  <!-- EXPERTISE                                                   -->
-  <!-- ═══════════════════════════════════════════════════════════ -->
-  <section class="py-32 md:py-40 relative overflow-hidden" id="expertise">
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/5 to-transparent"></div>
-    <div class="grid-pattern" aria-hidden="true"></div>
-
-    <div class="max-w-5xl mx-auto px-6 relative z-10">
-      <div class="text-center mb-20">
-        <div class="section-divider" id="expertise-divider"></div>
-        <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4" id="expertise-heading">
-          What I <span class="text-gradient">Build</span>
-        </h2>
-        <p class="text-slate-500 text-lg" id="expertise-sub">
-          The intersection of architecture, AI, and customer success
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6 md:gap-8" id="expertise-grid">
-        <div class="glass-card expertise-card overflow-hidden">
-          <div class="glass-card-glow" style="background: radial-gradient(circle at 30% 30%, rgba(59, 130, 246, 0.08), transparent 60%);" aria-hidden="true"></div>
-          <div class="expertise-image-wrap">
-            <img src="/photos/agentforce-demo.png" alt="Agentforce AI Interface" class="w-full h-36 object-cover" loading="lazy" />
-            <div class="expertise-image-overlay" aria-hidden="true"></div>
-          </div>
-          <div class="p-8">
-            <div class="icon-container bg-blue-500/10 border border-blue-500/15 mb-6 relative">
-              <span>🤖</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-3 relative">Agentforce & AI</h3>
-            <p class="text-slate-400 text-sm leading-relaxed relative">Architecting autonomous AI agents for enterprise. From strategy through deployment — making Agentforce real for the largest companies on the platform.</p>
-          </div>
-        </div>
-
-        <div class="glass-card expertise-card overflow-hidden">
-          <div class="glass-card-glow" style="background: radial-gradient(circle at 50% 30%, rgba(139, 92, 246, 0.08), transparent 60%);" aria-hidden="true"></div>
-          <div class="expertise-image-wrap">
-            <img src="/photos/data-cloud-arch.png" alt="Data Cloud Architecture" class="w-full h-36 object-cover" loading="lazy" />
-            <div class="expertise-image-overlay" aria-hidden="true"></div>
-          </div>
-          <div class="p-8">
-            <div class="icon-container bg-purple-500/10 border border-purple-500/15 mb-6 relative">
-              <span>☁️</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-3 relative">Data Cloud</h3>
-            <p class="text-slate-400 text-sm leading-relaxed relative">Unifying customer data at scale. Design, implementation, and activation of Salesforce Data Cloud for enterprises that need their data to actually work.</p>
-          </div>
-        </div>
-
-        <div class="glass-card expertise-card overflow-hidden">
-          <div class="glass-card-glow" style="background: radial-gradient(circle at 70% 30%, rgba(236, 72, 153, 0.08), transparent 60%);" aria-hidden="true"></div>
-          <div class="expertise-image-wrap">
-            <img src="/photos/marketing-cloud.png" alt="Marketing Cloud Dashboard" class="w-full h-36 object-cover" loading="lazy" />
-            <div class="expertise-image-overlay" aria-hidden="true"></div>
-          </div>
-          <div class="p-8">
-            <div class="icon-container bg-pink-500/10 border border-pink-500/15 mb-6 relative">
-              <span>🎯</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-3 relative">Marketing Cloud</h3>
-            <p class="text-slate-400 text-sm leading-relaxed relative">7+ years deep in Marketing Cloud. Engagement, Personalization, and the full stack. From hands-on development to enterprise architecture.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- CERTIFICATIONS                                              -->
   <!-- ═══════════════════════════════════════════════════════════ -->
   <section class="py-32 md:py-40 relative" id="certs">
@@ -334,7 +381,7 @@ interface TimelineEvent {
             </div>
             <div class="text-center md:text-left flex-1">
               <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Elliott Weed</h3>
-              <p class="text-slate-400 mb-4">Senior AI & Data Success Architect at Salesforce | Helping enterprises unlock the power of Agentforce & Data Cloud</p>
+              <p class="text-slate-400 mb-4">Success Architecture Director at Salesforce | Enterprise AI, Agentforce, Data 360, and architecture at scale</p>
               <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-slate-500">
                 <span class="flex items-center gap-1">
                   <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
@@ -382,7 +429,7 @@ interface TimelineEvent {
           Let's <span class="text-gradient">Connect</span>
         </h2>
         <p class="text-slate-500 text-lg" id="contact-sub">
-          Have a project in mind? Let's talk about how I can help.
+          Working through a difficult enterprise AI, data, or transformation problem? Let's compare notes.
         </p>
       </div>
 
@@ -425,7 +472,7 @@ interface TimelineEvent {
                 rows="4"
                 required
                 class="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all resize-none"
-                placeholder="Tell me about your project..."
+                placeholder="What would you like to discuss?"
               ></textarea>
             </div>
             <button 
@@ -508,6 +555,12 @@ interface TimelineEvent {
 
     // ─── FIX: Prevent GSAP from setting initial states before ScrollTrigger fires ───
     gsap.defaults({ immediateRender: false });
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReducedMotion) {
+      document.getElementById('sticky-nav')?.classList.add('visible');
+    } else {
     
     // Refresh ScrollTrigger after page fully loads
     window.addEventListener('load', () => {
@@ -535,7 +588,7 @@ interface TimelineEvent {
     });
 
     // ─── ACTIVE NAV SECTION TRACKING ───
-    const navSections = ['timeline', 'expertise', 'certs', 'contact'];
+    const navSections = ['impact', 'expertise', 'timeline', 'certs', 'contact'];
 
     function highlightNav(id: string) {
       document.querySelectorAll('.nav-link').forEach(link => {
@@ -699,6 +752,7 @@ interface TimelineEvent {
       .from('#hero-photo', { opacity: 0, scale: 0.85, filter: 'blur(12px)', duration: 1.2 })
       .from('#hero-name', { opacity: 0, y: 40, filter: 'blur(8px)', duration: 1 }, '-=0.6')
       .from('#hero-title', { opacity: 0, y: 25, filter: 'blur(6px)', duration: 0.8 }, '-=0.5')
+      .from('#hero-thesis', { opacity: 0, y: 25, filter: 'blur(6px)', duration: 0.8 }, '-=0.45')
       .from('#hero-sub', { opacity: 0, y: 20, filter: 'blur(4px)', duration: 0.8 }, '-=0.45')
       .from('#hero-stats .stat-card', {
         opacity: 0, y: 35, filter: 'blur(4px)', duration: 0.7, stagger: 0.12
@@ -740,7 +794,7 @@ interface TimelineEvent {
     });
 
     // ─── SECTION HEADING PARALLAX ───
-    document.querySelectorAll('#timeline, #expertise, #certs, #posts, #contact').forEach(section => {
+    document.querySelectorAll('#impact, #timeline, #expertise, #certs, #posts, #contact').forEach(section => {
       const heading = section.querySelector('h2');
       if (heading) {
         gsap.to(heading, {
@@ -752,6 +806,41 @@ interface TimelineEvent {
             scrub: 1.5,
           }
         });
+      }
+    });
+
+    // ─── DIRECTOR-LEVEL IMPACT ───
+    gsap.from('#impact-divider', {
+      scaleX: 0,
+      scrollTrigger: { trigger: '#impact-divider', start: 'top 85%', once: true },
+      duration: 0.8,
+      ease: 'power3.out',
+    });
+    gsap.from('#impact-heading', {
+      opacity: 0, y: 30, filter: 'blur(6px)',
+      scrollTrigger: { trigger: '#impact-heading', start: 'top 85%', once: true },
+      duration: 0.8,
+      ease: 'power3.out',
+    });
+    gsap.from('#impact-sub', {
+      opacity: 0, y: 20, filter: 'blur(4px)',
+      scrollTrigger: { trigger: '#impact-sub', start: 'top 85%', once: true },
+      duration: 0.8,
+      delay: 0.15,
+      ease: 'power3.out',
+    });
+    gsap.from('#impact-grid .glass-card', {
+      opacity: 0,
+      y: 50,
+      filter: 'blur(5px)',
+      duration: 0.8,
+      stagger: 0.12,
+      ease: 'power3.out',
+      immediateRender: false,
+      scrollTrigger: {
+        trigger: '#impact-grid',
+        start: 'top 80%',
+        once: true,
       }
     });
 
@@ -1014,6 +1103,7 @@ interface TimelineEvent {
         }
       });
     });
+    }
   </script>
 </Layout>
 <!-- deployed Sun Mar  1 13:10:27 EST 2026 -->

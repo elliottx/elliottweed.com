@@ -10,7 +10,7 @@
   {
     "year": 2007,
     "title": "BS Information Systems — Oregon State University",
-    "description": "Go Beavers. Graduated with a degree that would launch a 17+ year career in tech.",
+    "description": "Go Beavers. Graduated with a degree that launched a career spanning product, architecture, transformation, and consulting.",
     "icon": "🎓",
     "category": "education",
     "image": "/photos/oregon-state.jpg"
@@ -111,5 +111,13 @@
     "icon": "🏠",
     "category": "life",
     "image": "/photos/indianapolis.jpg"
+  },
+  {
+    "year": 2026,
+    "title": "Promoted to Success Architecture Director",
+    "description": "Promoted after scaling impact across Agentforce, Data Cloud, Marketing Cloud, and field enablement. Now helping strategic teams turn enterprise AI ambition into production-ready architecture while enabling 40+ architects.",
+    "icon": "✦",
+    "category": "career",
+    "image": "/photos/agentforce.jpg"
   }
 ]
